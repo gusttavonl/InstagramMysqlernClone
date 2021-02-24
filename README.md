@@ -35,8 +35,8 @@ Clone completo fullstack da home do Instagram Web com Mysqlern Stack ( Mysql, Ex
 ## Como executar o Front End
 
 ```bash
-git clone https://github.com/GustavoNoronha0/InstagramMyslernClone
-$ cd InstagramMyslernClone
+git clone https://github.com/GustavoNoronha0/InstagramMysqlernClone
+$ cd InstagramMysqlernClone
 $ cd frontend
 $ npm install
 $ npm start
@@ -45,8 +45,8 @@ $ npm start
 ## Como executar o Back end
 
 ```bash
-git clone https://github.com/GustavoNoronha0/InstagramMyslernClone
-$ cd InstagramMyslernClone
+git clone https://github.com/GustavoNoronha0/InstagramMysqlernClone
+$ cd InstagramMysqlernClone
 $ cd backend
 $ npm install
 $ npm start
