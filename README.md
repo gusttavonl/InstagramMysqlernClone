@@ -13,7 +13,7 @@ Clone completo fullstack da home do Instagram Web com Mysqlern Stack ( Mysql, Ex
 ## Imagens do Projeto
 ![image](https://user-images.githubusercontent.com/77861206/107554989-686a9480-6bb5-11eb-8228-ca64187d19d7.png)
 
-![image](https://user-images.githubusercontent.com/77861206/107690240-a389c800-6c88-11eb-99c7-eaeb97e9ba10.png)
+![image](https://user-images.githubusercontent.com/77861206/109046701-ce761200-76b3-11eb-9ee9-4e2de0ed6517.png)
 
 
 
