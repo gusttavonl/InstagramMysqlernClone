@@ -6,7 +6,7 @@
  Instagram Clone
 </h1>
 
-Clone completo fullstack da home do Instagram Web com Mysqlern Stack ( Mysql, Express, React Js e Node Js).
+Clone completo fullstack da home do Instagram Web com Mysqlern Stack ( Mysql, Express, React Js e Node Js). Usando Sequelize como ORM
 
 🚧 **Ainda em Construção** 🚧
 
