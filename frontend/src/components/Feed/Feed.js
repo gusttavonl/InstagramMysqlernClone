@@ -27,16 +27,16 @@ function Feed() {
 
 
     }, [])
-    async function deletePublicacao(_id) {
-        var response = await api.delete(`publicacao/${_id}`)
+    async function deletePublicacao(id) {
+        var response = await api.delete(`publicacao/${id}`)
         alert("Excluido com sucesso")
         window.location.reload()
     }
-    async function alterCurtidaSim(_id) {
+    async function alterCurtidaSim(id) {
         setLiked(true)
         const curtida = "S"
         const data = {
-            _id,
+            id,
             curtida
         }
         var response = await api.put('publicacao' + data)
@@ -46,7 +46,7 @@ function Feed() {
         setLiked(false)
         const curtida = "N"
         const data = {
-            _id,
+            id,
             curtida
         }
         var response = await api.put('publicacao' + data)
@@ -61,7 +61,7 @@ function Feed() {
                             <div className="feedPubHeader">
                                 <Avatar className="headerRightAvatar" src={"https://avatars.githubusercontent.com/u/77861206?s=460&u=34c77898a2036ccc169a2a4dc86c9d1e5faa1abc&v=4"} />
                                 <p>{publicacao.usuario}</p>
-                                <Delete onClick={(e) => deletePublicacao(publicacao._id)} />
+                                <Delete onClick={(e) => deletePublicacao(publicacao.id)} />
                             </div>
                             <div className="feedPubImg">
                                 <img src={publicacao.imagem} />
@@ -70,9 +70,9 @@ function Feed() {
                             <div className="feedPubFooter">
                                 <div className="feedPubFooterLeft">
                                     {liked ? (
-                                        <Favorite fontSize="large" onClick={(e) =>  alterCurtidaNao(publicacao._id)} />
+                                        <Favorite fontSize="large" onClick={(e) =>  alterCurtidaNao(publicacao.id)} />
                                     ) : (
-                                        <FavoriteBorder fontSize="large" onClick={(e) => alterCurtidaSim(publicacao._id) } />
+                                        <FavoriteBorder fontSize="large" onClick={(e) => alterCurtidaSim(publicacao.id) } />
                                     )}
                                     <Chat />
                                     <Telegram />
@@ -91,7 +91,7 @@ function Feed() {
                                                 <h6 className="feedPubComentsUser">{publicacao.usuario}</h6>
                                             </div>
                                             <div className="col-9">
-                                                <p className="feedPubComentsComent">{publicacao.comentario}</p>
+                                                <p className="feedPubComentsComent">Um novo comentario</p>
                                             </div>
                                         </div>
 
